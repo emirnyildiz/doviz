@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-A single self-contained page, `doviz-altin.html`: a Turkish-language currency and gold rate viewer and converter (TRY, USD, EUR, and gram/çeyrek/yarım/tam/ons gold). HTML, CSS and vanilla JS all live in that one file. There is no build step, package manager, linter or test suite. Not a git repository.
+A single self-contained page, `doviz-altin.html`: a Turkish-language currency and gold rate viewer and converter (TRY, USD, EUR, and gram/çeyrek/yarım/tam/ons gold). HTML, CSS and vanilla JS all live in that one file. There is no build step, package manager, linter or test suite. Git remote: `git@github.com:emirnyildiz/doviz.git` (branch `main`).
 
 ## Running
 
