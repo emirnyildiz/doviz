@@ -4,11 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-A single self-contained page, `doviz-altin.html`: a Turkish-language currency and gold rate viewer and converter (TRY, USD, EUR, and gram/çeyrek/yarım/tam/ons gold). HTML, CSS and vanilla JS all live in that one file. There is no build step, package manager, linter or test suite. Git remote: `git@github.com:emirnyildiz/doviz.git` (branch `main`).
+A single self-contained page, `public/index.html`: a Turkish-language currency and gold rate viewer and converter (TRY, USD, EUR, and gram/çeyrek/yarım/tam/ons gold). HTML, CSS and vanilla JS all live in that one file. There is no build step, package manager, linter or test suite. Git remote: `git@github.com:emirnyildiz/doviz.git` (branch `main`).
 
 ## Running
 
-Open `doviz-altin.html` directly in a browser (`start doviz-altin.html` in PowerShell). It needs internet access to fetch rates.
+Open `public/index.html` directly in a browser (`start public/index.html` in PowerShell). It needs internet access to fetch rates.
+
+## Deployment
+
+Deployed as a static-assets-only Cloudflare Worker (`wrangler.jsonc`, no `main` script; `assets.directory` is `./public`). Cloudflare Workers Builds runs `npx wrangler deploy` on every push to `main`. The `name` in `wrangler.jsonc` must match the Worker's name in the Cloudflare dashboard.
 
 ## Architecture
 

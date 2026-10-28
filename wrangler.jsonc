@@ -1,0 +1,8 @@
+{
+  "name": "doviz",
+  "compatibility_date": "2026-09-01",
+  // Sadece statik dosya: public/index.html kök adreste sunulur
+  "assets": {
+    "directory": "./public"
+  }
+}
